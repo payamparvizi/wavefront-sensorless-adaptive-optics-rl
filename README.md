@@ -9,6 +9,7 @@ SAPPS suppresses high-frequency oscillations in learned policies **without compr
 👤 **Authors**: [Payam Parvizi](https://www.linkedin.com/in/payamparvizi/), Colin Bellinger, Ross Cheriton, Abhishek Naik, Davide Spinello
 
 The environment is designed to evaluate **policy smoothness and control responsiveness** in **highly dynamic optical systems**, with a primary motivation drawn from **satellite-to-ground optical communication** scenarios.
+
 ---
 
 ## Abstract
@@ -220,6 +221,7 @@ The arXiv link will be added once the preprint is available.
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

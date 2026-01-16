@@ -1,0 +1,11 @@
+hcipy==0.6.0
+torch==2.0.1
+gym==0.26.2
+scipy==1.11.2
+numpy==1.25.2
+pandas==2.1.0
+matplotlib==3.7.2
+scikit-image==0.22.0
+wandb==0.16.0
+gymnasium==0.29.1
+tianshou==0.5.1

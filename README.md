@@ -3,7 +3,7 @@
 This directory contains the **reinforcement learning (RL) environment for wavefront sensorless adaptive optics (AO)** used in the paper:
 
 📄 **Paper**: *Action-Regularized Reinforcement Learning \\ for Adaptive Optics in Optical Satellite Communication*    
-🔗 **Preprint**: [In preparation; arXiv link will be added here.](https://doi.org/10.1364/opticaopen.30043543)
+🔗 **Preprint**: [Optica Open](https://doi.org/10.1364/opticaopen.30043543)
 
 The environment is designed to evaluate **policy smoothness and control responsiveness** in **highly dynamic optical systems**, with a primary motivation drawn from **satellite-to-ground optical communication** scenarios.
 
@@ -214,6 +214,7 @@ The arXiv link will be added once the preprint is available.
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

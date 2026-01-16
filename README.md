@@ -4,7 +4,7 @@ This repository contains the official implementation of **State-Adaptive Proport
 
 SAPPS suppresses high-frequency oscillations in learned policies **without compromising performance**, particularly in **dynamic environments** where rapid adaptation is required.
 
-📄 **Paper**: *Action-Regularized Reinforcement Learning \\ for Adaptive Optics in Optical Satellite Communication*    
+📄 **Paper**: *Action-Regularized Reinforcement Learning for Adaptive Optics in Optical Satellite Communication*    
 🔗 **Preprint**: [Optica Open](https://doi.org/10.1364/opticaopen.30043543)   
 👤 **Authors**: [Payam Parvizi](https://www.linkedin.com/in/payamparvizi/), Colin Bellinger, Ross Cheriton, Abhishek Naik, Davide Spinello
 
@@ -235,6 +235,7 @@ The arXiv link will be added once the preprint is available.
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

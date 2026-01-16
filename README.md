@@ -32,9 +32,9 @@ The focus of this environment is to assess whether **SAPPS** enables **smooth ye
 
 The results below summarize fiber coupling efficiency and action smoothness for **PPO**, **CAPS**, and **SAPPS (proposed method)**, and for the **flat mirror** across adaptive optics scenarios with increasing atmospheric drift velocity.
 
-At low drift velocity (5 m/s), all policy-regularization methods improve smoothness relative to PPO, and CAPS achieves the lowest action fluctuation. Coupling efficiency is comparable across regularized methods, with CAPS and LipsNet slightly outperforming SAPPS and PPO, consistent with slowly varying dynamics where restricting action changes does not limit responsiveness.
+At low drift velocity (5 m/s), all policy-regularization methods improve smoothness relative to PPO, and CAPS achieves the lowest action fluctuation. Coupling efficiency is comparable across regularized methods, with CAPS slightly outperforming SAPPS and PPO, consistent with slowly varying dynamics where restricting action changes does not limit responsiveness.
 
-As drift velocity increases (50 m/s and 500 m/s), differences between consecutive observations become more pronounced, and SAPPS achieves the highest and maintains average coupling efficiency while maintaining low action fluctuation relative to CAPS, LipsNet, and PPO. In these highly dynamic settings, CAPS remains very smooth but exhibits reduced coupling efficiency, indicating that penalizing action changes without accounting for observation variation can hinder responsiveness.
+As drift velocity increases (50 m/s and 500 m/s), differences between consecutive observations become more pronounced, and SAPPS achieves the highest and maintains average coupling efficiency while maintaining low action fluctuation relative to CAPS and PPO. In these highly dynamic settings, CAPS remains very smooth but exhibits reduced coupling efficiency, indicating that penalizing action changes without accounting for observation variation can hinder responsiveness.
 
 Overall, the results indicate that **SAPPS** balances smoothness and responsiveness more effectively as environmental dynamics increase, leading to improved performance under highly dynamic adaptive optics conditions.
 
@@ -165,31 +165,10 @@ Available options are:
 - `standard_PPO`: Vanilla PPO without policy smoothing
 - `PPO_CAPS`: PPO with **Conditioning for Action Policy Smoothness (CAPS)**
 - `PPO_SAPPS`: PPO with **State-Adaptive Proportional Policy Smoothing (SAPPS)** (proposed method)
-- `PPO_LipsNet`: PPO with a LipsNet-based policy architecture
 
 By default:
 ```bash
 --regularization_case standard_PPO
-```
-
-#### Neural network architecture
-- `standard_PPO`, `PPO_CAPS`, and `PPO_SAPPS` use a **standard MLP policy network**.
-- `PPO_LipsNet` replaces the MLP with a **LipsNet architecture**.
-
-#### Global vs. local Lipschitz constraint (LipsNet only)
-
-When using `PPO_LipsNet`, the type of Lipschitz constraint is controlled by:
-
-```bash
---global_lips
-```
-
-- `--global_lips 1` — **LipsNet-G** (global Lipschitz constraint)
-- `--global_lips 0` — **LipsNet-L** (local Lipschitz constraint)
-
-Default:
-```bash
---global_lips 1
 ```
 
 ***Note***: Exact numerical reproducibility is not expected due to stochastic turbulence generation.
@@ -214,6 +193,7 @@ The arXiv link will be added once the preprint is available.
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

@@ -1,4 +1,48 @@
-# Wavefront Sensorless Adaptive Optics Environment
+# SAPPS-RL
+## Adaptive Policy Regularization for Smooth Control in Reinforcement Learning
+
+This repository contains the official implementation of **State-Adaptive Proportional Policy Smoothing (SAPPS)**, a policy regularization method designed to produce **smooth yet responsive control policies** in continuous-control reinforcement learning.
+
+SAPPS suppresses high-frequency oscillations in learned policies **without compromising performance**, particularly in **dynamic environments** where rapid adaptation is required.
+
+📄 **Paper**: *Adaptive Policy Regularization for Smooth Control in Reinforcement Learning*  
+📌 **Journal submission**: IEEE Transactions on Automation Science and Engineering (under review)  
+🔗 **Preprint**: In preparation; arXiv link will be added here.  
+👤 **Authors**: [Payam Parvizi](https://www.linkedin.com/in/payamparvizi/), Abhishek Naik, Colin Bellinger, Ross Cheriton, Davide Spinello
+
+---
+
+## Abstract
+
+A significant challenge in applying reinforcement learning (RL) to continuous-control problems is the presence of high-frequency oscillations in the actions produced by learned policies. These oscillations result in abrupt control responses, leading to excessive actuator wear, increased power consumption, and instability in real-world deployments. Existing approaches to reduce such oscillations often involve trade-offs, including increased architectural complexity or degraded policy performance, particularly in environments where rapid state changes require rapid adaptation.
+
+To address this issue, we propose **State-Adaptive Proportional Policy Smoothing (SAPPS)**, a novel approach that adaptively adjusts smoothness constraints to suppress high-frequency components in RL policies. SAPPS is inspired by Lipschitz continuity. It introduces a state-adaptive proportional regularization during policy optimization, encouraging changes in consecutive actions to scale with changes in consecutive observations. This adaptive constraint enables smooth yet responsive control.
+
+Results from simulation and hardware experiments demonstrate that SAPPS produces smooth control policies without compromising performance across a diverse set of environments, including MuJoCo continuous-control benchmarks, a simulated adaptive optics system for optical satellite communications, and a real-world nano quadcopter, under both slowly and rapidly changing conditions.
+
+---
+
+
+## Method Overview
+
+SAPPS is a general policy regularization technique that can be integrated into deep RL algorithms to improve policy smoothness in both static and dynamic continuous-control settings. Rather than directly penalizing action magnitude, SAPPS regularizes the change between consecutive actions based on the relative change between consecutive observations.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3b4df3bc-2d37-49bb-ba33-a41ac0952c8d" align="center" width="400">
+</p>
+
+This adaptive formulation:
+- penalizes unnecessary action fluctuations when state changes are small
+- preserves responsiveness when large observation changes require rapid control adaptation
+
+SAPPS is implemented within **Proximal Policy Optimization (PPO)** and compared against:
+- Vanilla PPO  
+- PPO with Conditioning for Action Policy Smoothness (CAPS)  
+- PPO with LipsNet-based architectures  
+
+---
+
+## Wavefront Sensorless Adaptive Optics Environment
 
 This directory contains the **reinforcement learning (RL) environment for wavefront sensorless adaptive optics (AO)** used in the paper:
 
@@ -193,6 +237,7 @@ The arXiv link will be added once the preprint is available.
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

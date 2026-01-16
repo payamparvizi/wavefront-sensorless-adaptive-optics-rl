@@ -12,11 +12,7 @@ SAPPS suppresses high-frequency oscillations in learned policies **without compr
 
 ## Abstract
 
-A significant challenge in applying reinforcement learning (RL) to continuous-control problems is the presence of high-frequency oscillations in the actions produced by learned policies. These oscillations result in abrupt control responses, leading to excessive actuator wear, increased power consumption, and instability in real-world deployments. Existing approaches to reduce such oscillations often involve trade-offs, including increased architectural complexity or degraded policy performance, particularly in environments where rapid state changes require rapid adaptation.
-
-To address this issue, we propose **State-Adaptive Proportional Policy Smoothing (SAPPS)**, a novel approach that adaptively adjusts smoothness constraints to suppress high-frequency components in RL policies. SAPPS is inspired by Lipschitz continuity. It introduces a state-adaptive proportional regularization during policy optimization, encouraging changes in consecutive actions to scale with changes in consecutive observations. This adaptive constraint enables smooth yet responsive control.
-
-Results from simulation and hardware experiments demonstrate that SAPPS produces smooth control policies without compromising performance across a diverse set of environments, including MuJoCo continuous-control benchmarks, a simulated adaptive optics system for optical satellite communications, and a real-world nano quadcopter, under both slowly and rapidly changing conditions.
+Optical satellite-to-ground communication enables terabit-scale data transmission through the atmosphere. However, atmospheric turbulence distorts the optical wavefront, significantly reducing the coupling efficiency into standard long-haul telecommunications fibers. While adaptive optics systems can correct these distortions, they are costly and complex. In this work, we introduce the State-Adaptive Proportional Policy Smoothing (SAPPS) method, a reinforcement learning-based approach for wavefront sensorless adaptive optics tailored for low-cost optical satellite communication. Our results demonstrate that SAPPS consistently maintains high coupling efficiency with low action fluctuation compared to baseline methods, enabling more stable and reliable operation under challenging atmospheric conditions.
 
 ---
 
@@ -235,6 +231,7 @@ The arXiv link will be added once the preprint is available.
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

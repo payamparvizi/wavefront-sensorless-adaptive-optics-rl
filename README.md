@@ -39,7 +39,7 @@ As drift velocity increases (50 m/s and 500 m/s), differences between consecutiv
 Overall, the results indicate that **SAPPS** balances smoothness and responsiveness more effectively as environmental dynamics increase, leading to improved performance under highly dynamic adaptive optics conditions.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fded436b-ae81-43ee-86d2-64890e190b67" width="1100">
+  <img src="https://github.com/user-attachments/assets/a8e538f3-c26c-4894-974d-95921c3743ac" width="1100">
 </p>
 
 ---
@@ -214,6 +214,7 @@ The arXiv link will be added once the preprint is available.
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

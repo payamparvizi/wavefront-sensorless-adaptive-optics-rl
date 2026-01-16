@@ -229,9 +229,26 @@ Citation files are provided in [`CITATION.cff`](./CITATION.cff) and [`CITATION.b
 
 ---
 
+## License
+
+This project is released under the MIT License. See the LICENSE file for details.
+
+---
+
+## Contact
+
+For questions, bug reports, or feature requests, please open a GitHub Issue on this repository so others can benefit from the discussion.
+
+For private or collaboration-related inquiries, please contact:  
+**Payam Parvizi** — Email: pparv056@uottawa.ca   
+**Abhishek Naik** — Email: Abhishek.Naik@nrc-cnrc.gc.ca
+
+---
+
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

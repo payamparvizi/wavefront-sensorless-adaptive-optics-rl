@@ -32,7 +32,7 @@ This adaptive formulation:
 SAPPS is implemented within **Proximal Policy Optimization (PPO)** and compared against:
 - Vanilla PPO  
 - PPO with Conditioning for Action Policy Smoothness (CAPS)  
-- PPO with LipsNet-based architectures  
+- Flat mirror scenario
 
 ---
 
@@ -231,6 +231,7 @@ The arXiv link will be added once the preprint is available.
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

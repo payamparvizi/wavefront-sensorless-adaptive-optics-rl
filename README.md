@@ -1,14 +1,12 @@
-# SAPPS-RL
-## Adaptive Policy Regularization for Smooth Control in Reinforcement Learning
+## Action-Regularized Reinforcement Learning for Adaptive Optics in Optical Satellite Communication
 
 This repository contains the official implementation of **State-Adaptive Proportional Policy Smoothing (SAPPS)**, a policy regularization method designed to produce **smooth yet responsive control policies** in continuous-control reinforcement learning.
 
 SAPPS suppresses high-frequency oscillations in learned policies **without compromising performance**, particularly in **dynamic environments** where rapid adaptation is required.
 
-📄 **Paper**: *Adaptive Policy Regularization for Smooth Control in Reinforcement Learning*  
-📌 **Journal submission**: IEEE Transactions on Automation Science and Engineering (under review)  
-🔗 **Preprint**: In preparation; arXiv link will be added here.  
-👤 **Authors**: [Payam Parvizi](https://www.linkedin.com/in/payamparvizi/), Abhishek Naik, Colin Bellinger, Ross Cheriton, Davide Spinello
+📄 **Paper**: *Action-Regularized Reinforcement Learning \\ for Adaptive Optics in Optical Satellite Communication*    
+🔗 **Preprint**: [Optica Open](https://doi.org/10.1364/opticaopen.30043543)   
+👤 **Authors**: [Payam Parvizi](https://www.linkedin.com/in/payamparvizi/), Colin Bellinger, Ross Cheriton, Abhishek Naik, Davide Spinello
 
 ---
 
@@ -237,6 +235,7 @@ The arXiv link will be added once the preprint is available.
 ## Acknowledgments
 
 This work was supported in part by the **Natural Sciences and Engineering Research Council of Canada (NSERC)** and by the **National Research Council Canada (NRC)**.
+
 
 
 

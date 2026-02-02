@@ -1,24 +1,24 @@
 cff-version: 1.2.0
 message: "If you use this software in your research, please cite the following preprint."
 type: article
-title: "Adaptive Policy Regularization for Smooth Control in Reinforcement Learning"
+title: "Action-Regularized Reinforcement Learning for Adaptive Optics in Optical Satellite Communication"
 
 authors:
   - family-names: Parvizi
     given-names: Payam
-  - family-names: Naik
-    given-names: Abhishek
   - family-names: Bellinger
     given-names: Colin
   - family-names: Cheriton
     given-names: Ross
+  - family-names: Naik
+    given-names: Abhishek
   - family-names: Spinello
     given-names: Davide
 
-year: 2026
-journal: TechRxiv
-doi: 10.36227/techrxiv.177004949.91897305/v1
-url: https://doi.org/10.36227/techrxiv.177004949.91897305/v1
+year: 2025
+journal: Optica Open
+doi: 10.1364/opticaopen.30043543.v2
+url: https://doi.org/10.1364/opticaopen.30043543.v2
 
 notes:
   - "Preprint"
